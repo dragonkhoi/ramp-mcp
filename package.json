@@ -1,0 +1,35 @@
+{
+  "name": "mcp-ramp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "ramp",
+    "credit card",
+    "transactions",
+    "spend management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "A MCP Server for Ramp Credit Card and Spend Management",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "typescript": "^5.8.2"
+  },
+  "type": "module",
+  "bin": {
+    "mcp-ramp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ]
+}
