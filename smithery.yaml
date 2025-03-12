@@ -11,10 +11,10 @@ startCommand:
     properties:
       apiKey:
         type: string
-        description: Your Ramp API key.
+        description: Your Ramp API key from https://app.ramp.com/settings/ramp-developer.
       clientId:
         type: string
-        description: Your Ramp client ID.
+        description: Your Ramp client ID from https://app.ramp.com/settings/ramp-developer.
   commandFunction:
     # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
     |-
